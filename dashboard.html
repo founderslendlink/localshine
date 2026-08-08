@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Login | Local Shine</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOGIN VIEW ============ -->
+<div id="login-view">
+  <div class="wrap">
+    <div class="login-card">
+      <p class="eyebrow">Business login</p>
+      <h1>Local Shine Dashboard</h1>
+      <p style="margin-bottom:26px;">Sign in to view incoming quote requests.</p>
+      <form id="login-form">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" required autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-gold btn-block" id="login-btn">Sign In</button>
+        <div class="form-status" id="login-status"></div>
+      </form>
+      <p style="margin-top:24px;"><a href="index.html" class="small-link" style="color:var(--slate);">Back to site</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DASHBOARD VIEW ============ -->
+<div id="dash-view" style="display:none;">
+  <div class="dash-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">Local Shine <small>Dashboard</small></a>
+      <div style="display:flex; align-items:center; gap:18px;">
+        <button id="refresh-btn" class="btn btn-outline" style="padding:9px 16px; font-size:0.78rem;">Refresh</button>
+        <button id="logout-btn" class="btn btn-outline" style="padding:9px 16px; font-size:0.78rem;">Sign Out</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap dash-wrap">
+    <div class="dash-stats">
+      <div class="stat-card"><strong id="stat-total">—</strong><span>Total inquiries</span></div>
+      <div class="stat-card"><strong id="stat-new">—</strong><span>New</span></div>
+      <div class="stat-card"><strong id="stat-contacted">—</strong><span>Contacted</span></div>
+      <div class="stat-card"><strong id="stat-week">—</strong><span>Last 7 days</span></div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="inquiries" id="inquiries-table">
+        <thead>
+          <tr>
+            <th>Received</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Service</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Message</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="inquiries-body">
+        </tbody>
+      </table>
+      <div class="dash-empty" id="dash-empty" style="display:none;">No legacy inquiries yet.</div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
