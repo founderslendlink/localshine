@@ -14,6 +14,7 @@ dashboard.html         -> Business login + table of legacy inquiries
 css/style.css          -> All styling
 js/supabase-config.js  -> Supabase keys for the legacy dashboard
 js/dashboard.js        -> Dashboard login + inquiry table
+js/ba-slider.js        -> Commercial gas station before/after slider
 js/nav.js              -> Mobile navigation
 supabase/schema.sql    -> Legacy inquiries table
 images/                -> Project image assets
