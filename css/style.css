@@ -236,6 +236,12 @@ header.site {
   gap: 56px;
   align-items: center;
 }
+.hero-simple .hero-grid {
+  grid-template-columns: minmax(0, 760px);
+}
+.hero-simple {
+  padding-bottom: 72px;
+}
 .hero h1,
 .hero h2 {
   color: var(--foam);
