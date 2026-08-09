@@ -483,6 +483,14 @@ hr.rule {
 }
 
 /* ---------- about ---------- */
+.about-photo {
+  background:
+    linear-gradient(90deg, rgba(241,234,217,0.96) 0%, rgba(241,234,217,0.88) 48%, rgba(241,234,217,0.42) 100%),
+    url("../images/apartment-windows.jpeg") center / cover no-repeat;
+}
+.about-photo p {
+  max-width: 68ch;
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

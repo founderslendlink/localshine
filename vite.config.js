@@ -9,7 +9,6 @@ export default defineConfig({
         residential: resolve(import.meta.dirname, "residential.html"),
         commercial: resolve(import.meta.dirname, "commercial.html"),
         quote: resolve(import.meta.dirname, "quote.html"),
-        work: resolve(import.meta.dirname, "work.html"),
         dashboard: resolve(import.meta.dirname, "dashboard.html"),
       },
     },

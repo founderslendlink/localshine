@@ -9,12 +9,11 @@ index.html             -> Home page with services and SMS-first CTAs
 residential.html       -> Residential pressure washing page
 commercial.html        -> Commercial / contractor site-estimate page
 quote.html             -> Simple contact/text page for old links and SEO
-work.html              -> Exterior cleaning service overview page
 dashboard.html         -> Business login + table of legacy inquiries
 css/style.css          -> All styling
 js/supabase-config.js  -> Supabase keys for the legacy dashboard
 js/dashboard.js        -> Dashboard login + inquiry table
-js/ba-slider.js        -> Commercial gas station before/after slider
+js/ba-slider.js        -> Commercial and residential before/after sliders
 js/nav.js              -> Mobile navigation
 supabase/schema.sql    -> Legacy inquiries table
 images/                -> Project image assets
