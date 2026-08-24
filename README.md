@@ -11,7 +11,7 @@ property-cleanups.html -> Property cleanup page
 service-areas.html     -> South Florida service area page
 residential.html       -> Residential property maintenance legacy page
 commercial.html        -> Commercial exterior cleaning legacy page
-quote.html             -> Property estimate/contact page
+quote.html             -> Property estimate/contact page with no-backend email form
 dashboard.html         -> Business login + table of legacy inquiries
 css/style.css          -> All styling
 js/supabase-config.js  -> Supabase keys for the legacy dashboard
@@ -51,6 +51,6 @@ Vercel is configured with `vercel.json` to build with Vite and publish `dist`.
 
 ## Notes
 
-- Public CTAs open SMS, phone, email or the estimate page directly.
+- Public CTAs open SMS, phone, email or the estimate page directly. The estimate page uses a no-backend form submission endpoint as a lightweight fallback to texting.
 - `quote.html`, `residential.html` and `commercial.html` remain so old links do not break.
 - Supabase files remain only for the legacy dashboard and can be removed later if the dashboard is no longer needed.
