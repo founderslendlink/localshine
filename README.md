@@ -1,19 +1,22 @@
 # Local Shine Website
 
-A static website for Local Shine, a South Florida pressure washing and exterior cleaning company. The primary conversion action is direct texting: visitors should text their address, photos and job details to 786-505-1641.
+A static website for Local Shine, a South Florida exterior property maintenance company. The primary conversion action is direct texting or calling: visitors should send their address, service needs and photos when helpful to 786-505-1641.
 
 ## What's inside
 
 ```
-index.html             -> Home page with services and SMS-first CTAs
-residential.html       -> Residential pressure washing page
-commercial.html        -> Commercial / contractor site-estimate page
-quote.html             -> Simple contact/text page for old links and SEO
+lawn-maintenance.html  -> Recurring lawn maintenance page
+exterior-cleaning.html -> Exterior cleaning page
+property-cleanups.html -> Property cleanup page
+service-areas.html     -> South Florida service area page
+residential.html       -> Residential property maintenance legacy page
+commercial.html        -> Commercial exterior cleaning legacy page
+quote.html             -> Property estimate/contact page
 dashboard.html         -> Business login + table of legacy inquiries
 css/style.css          -> All styling
 js/supabase-config.js  -> Supabase keys for the legacy dashboard
 js/dashboard.js        -> Dashboard login + inquiry table
-js/ba-slider.js        -> Commercial and residential before/after sliders
+js/ba-slider.js        -> Commercial before/after slider
 js/nav.js              -> Mobile navigation
 supabase/schema.sql    -> Legacy inquiries table
 images/                -> Project image assets
@@ -48,6 +51,6 @@ Vercel is configured with `vercel.json` to build with Vite and publish `dist`.
 
 ## Notes
 
-- The public quote form has been removed. Public CTAs open SMS, phone or email directly.
-- `quote.html` remains as a lightweight contact page so old links do not break.
+- Public CTAs open SMS, phone, email or the estimate page directly.
+- `quote.html`, `residential.html` and `commercial.html` remain so old links do not break.
 - Supabase files remain only for the legacy dashboard and can be removed later if the dashboard is no longer needed.
